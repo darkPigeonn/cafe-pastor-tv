@@ -1,7 +1,10 @@
 <template>
   <div> 
     <div v-if="loading"></div>
-    <Carousel2 :images="content.images" v-else />
+    <div v-else>
+      <PlayYoutube :videoId="content.musics"/>
+      <Carousel2 :images="content.images" />
+    </div>
   </div>
 </template>
 
